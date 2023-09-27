@@ -1,0 +1,8 @@
+﻿2023-09-27 21:49:59.6885 ERROR Please enter positive intergers only.
+2023-09-27 21:50:48.0756 INFO Addition of two positive integers: 37
+2023-09-27 21:53:22.5005 INFO Addition of two positive integers: 88
+2023-09-27 21:53:40.6855 ERROR Please enter positive intergers only.
+2023-09-27 21:54:22.6993 INFO Addition of two positive integers: 66
+2023-09-27 22:04:00.5929 INFO Addition of two positive integers: 47
+2023-09-27 22:05:12.9666 ERROR Please enter positive intergers only.
+2023-09-27 22:05:29.5079 INFO Addition of two positive integers: 50
