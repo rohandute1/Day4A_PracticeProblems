@@ -16,7 +16,7 @@ namespace Day4A_PracticeProblem
             while (continueExecution) 
             {
                 Console.WriteLine("Please select any one of the following program which you wants to perform");
-                Console.WriteLine("1.Nlog problem");
+                Console.WriteLine("1.Nlog problem\n2.CRUD operations on ArrayList");
                 
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +31,23 @@ namespace Day4A_PracticeProblem
                         addition.Sum(x, y);
                         break;
 
+                    case 2:
+                        ArrayListOperations data = new ArrayListOperations();
+
+                        data.AddFruit("Apple");
+                        data.AddFruit("Banana");
+                        data.AddFruit("Orange");
+
+                        data.DisplayFruits();
+
+                        data.UpdateFruit("Banana", "Mango");
+
+                        data.DisplayFruits();
+
+                        data.DeleteFruit("Apple");
+
+                        data.DisplayFruits();
+                        break;
                     default:
                         Console.WriteLine("Please choose correct option");
                         break;
