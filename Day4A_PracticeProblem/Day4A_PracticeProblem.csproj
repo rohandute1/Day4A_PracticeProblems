@@ -90,6 +90,7 @@
   <ItemGroup>
     <Compile Include="Addition.cs" />
     <Compile Include="ArrayListOperations.cs" />
+    <Compile Include="DictionaryOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

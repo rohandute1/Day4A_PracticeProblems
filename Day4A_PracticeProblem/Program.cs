@@ -16,7 +16,8 @@ namespace Day4A_PracticeProblem
             while (continueExecution) 
             {
                 Console.WriteLine("Please select any one of the following program which you wants to perform");
-                Console.WriteLine("1.Nlog problem\n2.CRUD operations on ArrayList");
+                Console.WriteLine("1.Nlog problem\n2.CRUD operations on ArrayList" +
+                    "\n3.CRUD operations on Dictionary");
                 
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -47,6 +48,30 @@ namespace Day4A_PracticeProblem
                         data.DeleteFruit("Apple");
 
                         data.DisplayFruits();
+                        break;
+
+                    case 3:
+                        DictionaryOperations crudOperations = new DictionaryOperations();
+
+                        crudOperations.Create(1, "Apple");
+                        crudOperations.Create(2, "Banana");
+
+                        Console.WriteLine("Reading fruits:");
+                        Console.WriteLine($"Key 1: {crudOperations.Read(1)}");
+                        Console.WriteLine($"Key 3: {crudOperations.Read(3)}");
+
+                        crudOperations.Update(2, "Orange");
+                        crudOperations.Update(3, "Grape");
+
+                        Console.WriteLine("After update:");
+                        Console.WriteLine($"Key 2: {crudOperations.Read(2)}");
+
+                        crudOperations.Delete(1);
+                        crudOperations.Delete(3);
+
+                        Console.WriteLine("After delete:");
+                        Console.WriteLine($"Key 1: {crudOperations.Read(1)}");
+
                         break;
                     default:
                         Console.WriteLine("Please choose correct option");
